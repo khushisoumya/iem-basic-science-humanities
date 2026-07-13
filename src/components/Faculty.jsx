@@ -1,36 +1,42 @@
 import { useRef } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
+import faculty1 from "../assets/bsh13.jpg"
+import faculty2 from "../assets/bsh17.webp"
+import faculty3 from "../assets/bsh15.jpg"
+import faculty4 from "../assets/bsh16.webp"
+import faculty5 from "../assets/bsh14.jpg"
+
 const facultyMembers = [
   {
     name: 'Dr. Ananya Roy',
     role: 'Professor & HOD',
     qualification: 'Ph.D. in Mathematics',
-    photo: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=300',
+    photo: faculty1,
   },
   {
     name: 'Dr. Subhankar Das',
     role: 'Associate Professor',
     qualification: 'Ph.D. in Physics',
-    photo: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=300',
+    photo: faculty2,
   },
   {
     name: 'Dr. Madhurima Sen',
     role: 'Associate Professor',
     qualification: 'Ph.D. in English',
-    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300',
+    photo: faculty3,
   },
   {
     name: 'Dr. Arindam Ghosh',
     role: 'Assistant Professor',
     qualification: 'Ph.D. in Chemistry',
-    photo: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=300',
+    photo: faculty4,
   },
   {
     name: 'Dr. Priyanka Saha',
     role: 'Assistant Professor',
     qualification: 'Ph.D. in Economics',
-    photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300',
+    photo: faculty5,
   },
 ]
 
@@ -102,12 +108,12 @@ function Faculty() {
           </button>
         </div>
 
-        {/* View All button */}
+        {/* View All button
         <div className="text-center mt-10">
           <button className="bg-brand-blue hover:bg-blue-700 text-white text-sm font-medium px-6 py-3 rounded-md transition-colors">
             View All Faculty
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

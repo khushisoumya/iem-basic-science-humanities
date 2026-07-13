@@ -5,9 +5,9 @@ function FacultyHeader({ shown, total }) {
         <h2 className="text-2xl font-bold text-navy">Our Faculty Members</h2>
         <div className="w-12 h-1 bg-brand-blue rounded-full mt-2" />
       </div>
-      <span className="text-gray-500 text-sm">
+      {/* <span className="text-gray-500 text-sm">
         Showing {shown} of {total} faculty members
-      </span>
+      </span> */}
     </div>
   )
 }

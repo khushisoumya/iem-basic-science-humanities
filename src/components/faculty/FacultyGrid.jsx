@@ -1,41 +1,48 @@
 import { Mail, User, GraduationCap, FileText, ArrowRight } from 'lucide-react'
 
+import faculty1 from "../../assets/bsh16.webp"
+import faculty2 from "../../assets/bsh14.jpg"
+import faculty3 from "../../assets/bsh18.jpg"
+import faculty4 from "../../assets/bsh13.jpg"
+import faculty5 from "../../assets/bsh17.webp"
+import faculty6 from "../../assets/bsh15.jpg"
+
 const facultyMembers = [
   {
     name: 'Dr. Rajesh Kumar',
     title: 'Professor & HOD',
     tags: ['Applied Mathematics', 'Data Science'],
-    photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400',
+    photo: faculty1,
   },
   {
     name: 'Dr. Priya Sharma',
     title: 'Associate Professor',
     tags: ['English Literature', 'Communication'],
-    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400',
+    photo: faculty2,
   },
   {
     name: 'Dr. Anil Verma',
     title: 'Assistant Professor',
     tags: ['Physics', 'Material Science'],
-    photo: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=400',
+    photo: faculty3,
   },
   {
     name: 'Dr. Neha Singh',
     title: 'Associate Professor',
     tags: ['Chemistry', 'Green Energy'],
-    photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400',
+    photo: faculty4,
   },
   {
     name: 'Mr. Sandeep Das',
     title: 'Assistant Professor',
     tags: ['Environmental Science', 'Sustainability'],
-    photo: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400',
+    photo: faculty5,
   },
   {
     name: 'Ms. Pooja Gupta',
     title: 'Assistant Professor',
     tags: ['Statistics', 'Machine Learning'],
-    photo: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=400',
+    photo: faculty6,
   },
 ]
 

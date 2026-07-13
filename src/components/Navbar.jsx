@@ -131,10 +131,16 @@ function Navbar() {
           })}
         </nav>
 
-        <button className="hidden lg:flex items-center gap-1.5 bg-brand-blue hover:bg-blue-700 text-white text-sm font-medium px-4 py-2.5 rounded-md transition-colors">
-          Explore Department
-          <span className="text-base leading-none">→</span>
-        </button>
+
+        <a
+  href="https://exam.iem.edu.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden lg:flex items-center gap-1.5 bg-brand-blue hover:bg-blue-700 text-white text-sm font-medium px-4 py-2.5 rounded-md transition-colors"
+>
+  Admissions Open
+  <span className="text-base leading-none">→</span>
+</a>
       </div>
     </header>
   )
