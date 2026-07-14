@@ -16,7 +16,7 @@ const typeColors = {
 
 function JournalsGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-14 pb-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14 pb-12 sm:pb-14 lg:pb-16">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item) => {
           const Icon = item.icon

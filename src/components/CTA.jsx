@@ -1,50 +1,39 @@
 
-import { GraduationCap } from "lucide-react";
+import { ArrowRight, GraduationCap } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 function CTA() {
   return (
-    <section className="relative py-20 px-6 overflow-hidden">
-      {/* Background */}
-      <img
-        src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1600"
-        alt="IEM Campus"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-navy/90" />
-
-      {/* Content */}
-      <div className="relative max-w-3xl mx-auto text-center">
-        <div className="w-14 h-14 rounded-full bg-brand-blue flex items-center justify-center mx-auto mb-6 shadow-lg">
-          <GraduationCap
-            className="w-6 h-6 text-white"
-            strokeWidth={2}
-          />
-        </div>
-
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-          Ready to Begin Your Journey?
-        </h2>
-
-        <p className="text-gray-300 text-base leading-relaxed mb-10 max-w-2xl mx-auto">
-          Join the IEM family and become part of a legacy of academic
-          excellence, innovation, and industry-focused education. Take the
-          first step towards building a successful engineering career with us.
-        </p>
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="bg-white hover:bg-gray-100 text-navy font-semibold px-7 py-3 rounded-md transition-all duration-300 shadow-lg hover:shadow-xl">
-            Contact Us
-          </button>
-
-          <button className="border border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold px-7 py-3 rounded-md transition-all duration-300">
-            Visit IEM Website
-          </button>
+    <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-14 lg:py-16">
+      <div className="max-w-6xl mx-auto relative bg-brand-blue rounded-2xl overflow-hidden border border-brand-blue shadow-sm shadow-blue-300/40">
+        <GraduationCap
+          className="absolute right-6 top-1/2 hidden w-40 h-40 -translate-y-1/2 text-white/10 sm:block"
+          strokeWidth={1}
+        />
+        <div className="relative flex flex-col items-center justify-between gap-6 p-6 sm:flex-row sm:p-8 lg:p-10">
+          <div className="max-w-lg text-center sm:text-left">
+            <h2 className="mb-2 text-xl font-bold text-white sm:text-2xl">
+              Ready to Begin Your Journey?
+            </h2>
+            <p className="text-sm leading-relaxed text-blue-50">
+              Join the IEM family and become part of a legacy of academic
+              excellence, innovation, and industry-focused education. Take the
+              first step towards building a successful engineering career with us.
+            </p>
+          </div>
+          <div className="w-full shrink-0 sm:w-auto">
+            <Link
+              to="/contact"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-medium text-brand-blue shadow-lg shadow-blue-900/10 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-xl"
+            >
+              Contact Us
+              <ArrowRight className="w-4 h-4" strokeWidth={2} />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default CTA;
+export default CTA

@@ -14,53 +14,55 @@ function About() {
   const [showModal, setShowModal] = useState(false)
 
   return (
-    <section className="bg-gray-50 py-20 px-6">
+    <section className="bg-gray-50 py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
           <span className="inline-block bg-blue-50 text-brand-blue text-xs font-medium px-3 py-1.5 rounded-full mb-4">
             About Us
           </span>
-          <h2 className="text-3xl font-bold text-navy">Welcome to BSH Department</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-navy">Welcome to BSH Department</h2>
           <div className="w-16 h-1 bg-brand-blue rounded-full mx-auto mt-4" />
         </div>
 
         {/* Content grid */}
         <div className="grid md:grid-cols-3 gap-6">
           {/* HOD Message Card */}
-          <div className="md:col-span-2 bg-white rounded-2xl border-l-4 border-brand-blue shadow-sm p-6 flex items-center gap-6">
+          <div className="md:col-span-2 h-full bg-white rounded-2xl border-l-4 border-brand-blue shadow-sm p-5 sm:p-6 flex flex-col lg:flex-row items-stretch gap-5 sm:gap-6">
 
-            <div className="flex-shrink-0 flex flex-col items-center">
+            <div className="flex-shrink-0 flex flex-col items-center justify-center self-center gap-3">
               <img
                 src={hod}
                 alt="Head of Department"
-                className="w-44 h-40 object-cover rounded-xl"
+                className="w-full max-w-[220px] sm:max-w-[240px] lg:w-44 lg:max-w-none h-56 sm:h-60 lg:h-40 object-cover rounded-xl"
               />
-              <p className="mt-3 text-sm font-semibold text-navy text-center">
-                Prof. (Dr.) Prabir Kumar Das
-              </p>
-              <p className="text-xs text-gray-500 text-center">
-                Professor & HOD, BSH
-              </p>
+              <div className="flex flex-col items-center gap-1 text-center">
+                <p className="text-sm font-semibold text-navy">
+                  Prof. (Dr.) Prabir Kumar Das
+                </p>
+                <p className="text-xs text-gray-500">
+                  Professor & HOD, BSH
+                </p>
+              </div>
             </div>
 
-            <div className="flex-1">
+            <div className="flex flex-1 flex-col justify-center">
               <div className="flex items-center gap-2 text-brand-blue text-xs font-semibold mb-2">
                 <Quote className="w-4 h-4" />
                 MESSAGE FROM HOD
               </div>
 
-              <h3 className="text-2xl font-bold text-navy mb-3">
+              <h3 className="text-xl sm:text-2xl font-bold text-navy mb-3">
                 Head of Department
               </h3>
 
-              <p className="text-gray-600 leading-7 mb-5">
+              <p className="text-sm sm:text-base text-gray-600 leading-7 mb-5">
                 Our vision is to create a dynamic learning environment that nurtures curiosity, promotes interdisciplinary thinking, and empowers students to excel in a rapidly evolving world.
               </p>
 
               <button
                 onClick={() => setShowModal(true)}
-                className="text-brand-blue font-medium hover:underline"
+                className="mt-1 text-brand-blue font-medium hover:underline"
               >
                 Read Full Message →
               </button>
@@ -100,7 +102,7 @@ function About() {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="bg-white rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 relative"
+            className="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-5 sm:p-8 relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -122,9 +124,9 @@ function About() {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-navy mb-4">Message from the HOD</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-navy mb-4">Message from the HOD</h3>
 
-            <div className="text-gray-600 leading-7 whitespace-pre-line">
+            <div className="text-sm sm:text-base text-gray-600 leading-7 whitespace-pre-line">
               {fullMessage}
             </div>
           </div>

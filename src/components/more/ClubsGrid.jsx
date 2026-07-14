@@ -11,7 +11,7 @@ const clubs = [
 
 function ClubsGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-14 pb-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14 pb-12 sm:pb-14 lg:pb-16">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {clubs.map((club) => {
           const Icon = club.icon
@@ -22,7 +22,7 @@ function ClubsGrid() {
               </div>
               <h3 className="text-navy font-bold text-base mb-2">{club.name}</h3>
               <p className="text-gray-500 text-sm leading-relaxed mb-4">{club.description}</p>
-              <div className="flex items-center justify-between text-xs text-gray-400 border-t border-gray-100 pt-3">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between gap-1.5 text-xs text-gray-400 border-t border-gray-100 pt-3">
                 <span>{club.members} members</span>
                 <span>{club.coordinator}</span>
               </div>

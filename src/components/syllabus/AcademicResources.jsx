@@ -11,7 +11,7 @@ const resources = [
 
 function AcademicResources() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-14">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14">
       <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8">
         <h3 className="text-navy font-bold text-xl mb-6">Academic Resources</h3>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">

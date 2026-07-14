@@ -19,28 +19,28 @@ const facilities = [
 
 function Facilities() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section id="facilities" className="bg-white py-14 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto grid md:grid-cols-[minmax(0,1fr)_2fr] gap-10 items-center">
         {/* Left: heading + CTA */}
         <div>
           <span className="inline-block bg-blue-50 text-brand-blue text-xs font-medium px-3 py-1.5 rounded-full mb-4">
             Infrastructure
           </span>
-          <h2 className="text-3xl font-bold text-navy leading-snug mb-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-navy leading-snug mb-3">
             World-Class Facilities
           </h2>
-          <p className="text-gray-500 text-sm mb-6">
+          <p className="text-gray-500 text-sm sm:text-base mb-6">
             State-of-the-art infrastructure designed for comprehensive learning and innovation
           </p>
           <div className="w-16 h-1 bg-brand-blue rounded-full mb-6" />
-          <button className="border border-gray-200 text-navy text-sm font-medium px-5 py-2.5 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
+          <button className="w-full sm:w-auto border border-gray-200 text-navy text-sm font-medium px-5 py-2.5 rounded-md hover:bg-gray-50 transition-colors inline-flex items-center justify-center gap-2">
             View All Facilities
             <span>→</span>
           </button>
         </div>
 
         {/* Right: image grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
           {facilities.map((facility) => (
             <div
               key={facility.name}

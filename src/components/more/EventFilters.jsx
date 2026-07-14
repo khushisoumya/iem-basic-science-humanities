@@ -11,7 +11,7 @@ function EventFilters({ onFilterChange }) {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 pt-14 flex flex-wrap gap-2">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14 flex flex-wrap gap-2">
       {filters.map((filter) => (
         <button
           key={filter}

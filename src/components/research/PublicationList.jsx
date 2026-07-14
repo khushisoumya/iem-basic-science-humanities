@@ -61,9 +61,9 @@ function PublicationList({ activeFilter = 'All', searchTerm = '' }) {
   })
 
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-8">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-navy font-bold text-lg">
+        <h2 className="text-navy font-bold text-base sm:text-lg">
           Showing {filtered.length} of {publications.length} publications
         </h2>
       </div>
@@ -72,7 +72,7 @@ function PublicationList({ activeFilter = 'All', searchTerm = '' }) {
         {filtered.map((pub) => (
           <div
             key={pub.title}
-            className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+            className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
           >
             <div className="flex items-start gap-4">
               <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">

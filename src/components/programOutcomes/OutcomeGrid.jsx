@@ -20,20 +20,20 @@ const outcomes = [
 
 function OutcomeGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-14">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {outcomes.map((outcome) => {
           const Icon = outcome.icon
           return (
             <div
               key={outcome.number}
-              className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-blue to-navy flex items-center justify-center">
                   <Icon className="w-6 h-6 text-white" strokeWidth={2} />
                 </div>
-                <span className="text-gray-200 font-bold text-3xl leading-none">{outcome.number}</span>
+                <span className="text-gray-200 font-bold text-2xl sm:text-3xl leading-none">{outcome.number}</span>
               </div>
 
               <h3 className="text-navy font-bold text-base mb-2">{outcome.title}</h3>

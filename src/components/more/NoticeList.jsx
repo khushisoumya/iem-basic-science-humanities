@@ -26,7 +26,7 @@ function NoticeList() {
   const filtered = notices.filter((n) => active === 'All' || n.category === active)
 
   return (
-    <section className="max-w-5xl mx-auto px-6 pt-14">
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14">
       <div className="flex flex-wrap gap-2 mb-8">
         {categories.map((cat) => (
           <button
@@ -45,13 +45,13 @@ function NoticeList() {
 
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-100">
         {filtered.map((notice) => (
-          <div key={notice.title} className="flex items-center gap-4 p-5 hover:bg-gray-50/60 transition-colors">
+          <div key={notice.title} className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 hover:bg-gray-50/60 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center shrink-0">
               <FileText className="w-4.5 h-4.5 text-brand-blue" strokeWidth={2} />
             </div>
             <div className="flex-1">
               <h4 className="text-navy font-medium text-sm">{notice.title}</h4>
-              <div className="flex items-center gap-3 mt-1">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-1">
                 <span className="flex items-center gap-1 text-gray-400 text-xs">
                   <Calendar className="w-3 h-3" strokeWidth={2} />
                   {notice.date}
@@ -61,7 +61,7 @@ function NoticeList() {
                 </span>
               </div>
             </div>
-            <button className="w-9 h-9 rounded-lg bg-gray-50 hover:bg-gray-100 flex items-center justify-center shrink-0 transition-colors" aria-label="Download">
+            <button className="w-9 h-9 rounded-lg bg-gray-50 hover:bg-gray-100 flex items-center justify-center shrink-0 transition-colors self-start sm:self-auto" aria-label="Download">
               <Download className="w-4 h-4 text-gray-500" strokeWidth={2} />
             </button>
           </div>

@@ -15,7 +15,7 @@ function SyllabusFilters({ onSearchChange, onFilterChange }) {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 pt-6">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
       <div className="relative mb-4">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" strokeWidth={2} />
         <input

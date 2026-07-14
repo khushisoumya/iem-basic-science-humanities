@@ -11,10 +11,10 @@ const awards = [
 
 function AwardsList() {
   return (
-    <section className="max-w-5xl mx-auto px-6 pt-14 pb-16">
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14 pb-12 sm:pb-14 lg:pb-16">
       <div className="flex flex-col gap-4">
         {awards.map((award) => (
-          <div key={award.title} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex items-start gap-4 hover:shadow-md transition-shadow">
+          <div key={award.title} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6 flex flex-col sm:flex-row items-start gap-4 hover:shadow-md transition-shadow">
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-blue to-navy flex items-center justify-center shrink-0">
               <Trophy className="w-6 h-6 text-white" strokeWidth={2} />
             </div>

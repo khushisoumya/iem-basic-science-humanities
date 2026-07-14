@@ -25,21 +25,21 @@ const items = [
 
 function VisionMission() {
   return (
-    <section className="relative bg-blue-50/40 py-16 px-6 overflow-hidden">
+    <section className="relative bg-blue-50/40 py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="relative max-w-5xl mx-auto grid sm:grid-cols-2 gap-6">
         {items.map((item) => {
           const Icon = item.icon
           return (
             <div
               key={item.title}
-              className={`bg-white rounded-2xl shadow-sm border-t border-r border-b border-gray-100 border-l-4 ${item.borderColor} p-7 flex gap-5`}
+              className={`bg-white rounded-2xl shadow-sm border-t border-r border-b border-gray-100 border-l-4 ${item.borderColor} p-5 sm:p-7 flex flex-col sm:flex-row gap-4 sm:gap-5`}
             >
               <div className={`w-12 h-12 rounded-xl ${item.iconBg} flex items-center justify-center shrink-0`}>
                 <Icon className={`w-6 h-6 ${item.iconColor}`} strokeWidth={2} />
               </div>
               <div>
-                <h3 className="text-navy font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
+                <h3 className="text-navy font-bold text-base sm:text-lg mb-2">{item.title}</h3>
+                <p className="text-gray-500 text-sm sm:text-base leading-relaxed">{item.description}</p>
               </div>
             </div>
           )

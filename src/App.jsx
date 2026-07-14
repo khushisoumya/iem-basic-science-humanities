@@ -16,10 +16,12 @@ import ClubsPage from './pages/ClubsPage'
 import AwardsPage from './pages/AwardsPage'
 import GalleryPage from './pages/GalleryPage'
 import ContactPage from './pages/ContactPage'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
@@ -51,6 +53,5 @@ function App() {
 }
 
 export default App
-
 
 

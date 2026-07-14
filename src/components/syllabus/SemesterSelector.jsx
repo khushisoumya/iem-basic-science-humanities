@@ -11,7 +11,7 @@ function SemesterSelector({ onChange }) {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 pt-14">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14">
       <div className="flex flex-wrap gap-2 bg-gray-50 rounded-xl p-2 border border-gray-100">
         {semesters.map((sem) => (
           <button

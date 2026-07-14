@@ -11,7 +11,7 @@ const photos = [
 
 function GalleryGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-14 pb-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14 pb-12 sm:pb-14 lg:pb-16">
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {photos.map((photo) => (
           <div key={photo.caption} className="relative rounded-xl overflow-hidden aspect-square group">

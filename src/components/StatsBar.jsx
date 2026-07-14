@@ -9,21 +9,21 @@ const defaultStats = [
 
 function StatsBar({ stats = defaultStats }) {
   return (
-    <section className="relative z-10 -mt-10 px-6">
-      <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-100 grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-100">
+    <section className="relative z-10 -mt-8 sm:-mt-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto overflow-hidden bg-white rounded-2xl shadow-lg border border-gray-100 grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-gray-100">
         {stats.map((stat) => {
           const Icon = stat.icon
           return (
             <div
               key={stat.label}
-              className="flex items-center gap-3 px-6 py-6 justify-center md:justify-start"
+              className="flex min-h-32 sm:min-h-36 lg:min-h-0 flex-col items-center justify-center gap-3 px-4 sm:px-5 lg:px-6 py-5 sm:py-6 text-center"
             >
               <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center shrink-0">
                 <Icon className="w-5 h-5 text-brand-blue" strokeWidth={2} />
               </div>
-              <div>
-                <div className="text-navy font-bold text-lg leading-tight">{stat.value}</div>
-                <div className="text-gray-500 text-xs">{stat.label}</div>
+              <div className="space-y-1">
+                <div className="text-navy font-bold text-base sm:text-lg leading-tight">{stat.value}</div>
+                <div className="text-gray-500 text-xs sm:text-sm leading-relaxed text-balance">{stat.label}</div>
               </div>
             </div>
           )

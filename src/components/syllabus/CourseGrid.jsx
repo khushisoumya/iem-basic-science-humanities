@@ -15,7 +15,7 @@ const courses = [
 
 function CourseGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-8">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {courses.map((course) => {
           const Icon = course.icon

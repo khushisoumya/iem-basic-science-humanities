@@ -25,12 +25,12 @@ const meetings = [
 
 function MeetingTimeline() {
   return (
-    <section className="max-w-4xl mx-auto px-6 pt-14">
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14">
       <div className="text-center mb-10">
         <span className="inline-block bg-blue-50 text-brand-blue text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full mb-4">
           Timeline
         </span>
-        <h2 className="text-2xl font-bold text-navy">Meeting Timeline</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-navy">Meeting Timeline</h2>
       </div>
 
       <div className="relative pl-8 sm:pl-10">
@@ -43,13 +43,13 @@ function MeetingTimeline() {
               {/* Timeline dot */}
               <div className="absolute -left-8 sm:-left-10 top-1.5 w-6 h-6 rounded-full bg-brand-blue border-4 border-blue-50 flex items-center justify-center" />
 
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-md transition-shadow">
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6 hover:shadow-md transition-shadow">
                 <span className="inline-block text-brand-blue text-xs font-semibold mb-2">
                   {meeting.date}
                 </span>
                 <h3 className="text-navy font-bold text-base mb-1.5">{meeting.title}</h3>
                 <p className="text-gray-500 text-sm mb-4">{meeting.description}</p>
-                <button className="flex items-center gap-1.5 text-brand-blue text-sm font-medium hover:gap-2.5 transition-all">
+                <button className="flex items-center gap-1.5 text-brand-blue text-xs sm:text-sm font-medium hover:gap-2.5 transition-all">
                   <FileDown className="w-4 h-4" strokeWidth={2} />
                   Download Minutes
                 </button>

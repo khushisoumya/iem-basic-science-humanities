@@ -48,7 +48,7 @@ const facultyMembers = [
 
 function FacultyGrid() {
   return (
-    <section className="max-w-6xl mx-auto px-6 pb-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-14 lg:pb-16">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {facultyMembers.map((member) => (
           <div

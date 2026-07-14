@@ -10,12 +10,12 @@ const steps = [
 
 function GovernanceWorkflow() {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 lg:py-16">
       <div className="text-center mb-10">
         <span className="inline-block bg-blue-50 text-brand-blue text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full mb-4">
           Process
         </span>
-        <h2 className="text-2xl font-bold text-navy">Governance Workflow</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-navy">Governance Workflow</h2>
       </div>
 
       <div className="flex flex-col lg:flex-row items-stretch gap-4">
@@ -23,7 +23,7 @@ function GovernanceWorkflow() {
           const Icon = step.icon
           return (
             <div key={step.label} className="flex items-center gap-4 flex-1">
-              <div className="flex-1 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+              <div className="flex-1 bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mx-auto mb-3">
                   <Icon className="w-6 h-6 text-brand-blue" strokeWidth={2} />
                 </div>

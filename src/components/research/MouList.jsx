@@ -25,19 +25,19 @@ const mous = [
 
 function MouList() {
   return (
-    <section className="max-w-5xl mx-auto px-6 pt-14">
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 lg:pt-14">
       <div className="text-center mb-10">
         <span className="inline-block bg-blue-50 text-brand-blue text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full mb-4">
           Partnerships
         </span>
-        <h2 className="text-2xl font-bold text-navy">Memorandums of Understanding</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-navy">Memorandums of Understanding</h2>
       </div>
 
       <div className="flex flex-col gap-4">
         {mous.map((mou) => (
           <div
             key={mou.partner}
-            className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex items-start gap-4 hover:shadow-md transition-shadow"
+            className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6 flex flex-col sm:flex-row items-start gap-4 hover:shadow-md transition-shadow"
           >
             <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
               <Building2 className="w-5 h-5 text-brand-blue" strokeWidth={2} />

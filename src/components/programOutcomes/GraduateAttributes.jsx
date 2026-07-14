@@ -13,12 +13,12 @@ const attributes = [
 
 function GraduateAttributes() {
   return (
-    <section className="bg-blue-50/40 py-16 px-6 mt-14">
+    <section className="bg-blue-50/40 py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 mt-10 sm:mt-12 lg:mt-14">
       <div className="max-w-4xl mx-auto text-center">
         <span className="inline-block bg-white text-brand-blue text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full mb-4 border border-blue-100">
           Attributes
         </span>
-        <h2 className="text-2xl font-bold text-navy mb-8">Graduate Attributes</h2>
+        <h2 className="text-xl sm:text-2xl font-bold text-navy mb-8">Graduate Attributes</h2>
 
         <div className="flex flex-wrap justify-center gap-3">
           {attributes.map((attribute) => (
